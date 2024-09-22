@@ -1,0 +1,12 @@
+<h1>Wikinimous</h1>
+
+<ul>
+  <% @articles.reverse_each do |article| %>
+    <li>
+      <div>
+        <h2><%= article.title %></h2>
+        <p><%= article.content %></p>
+      </div>
+    </li>
+  <% end %>
+</ul>
