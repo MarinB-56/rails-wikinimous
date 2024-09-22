@@ -12,5 +12,9 @@
 
   <body>
     <%= yield %>
+
+    <% unless current_page?(articles_path) %>
+      <%= link_to "Back", articles_path %>
+    <% end %>
   </body>
 </html>
